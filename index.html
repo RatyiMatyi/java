@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javasxript_gyak</title>
+</head>
+<body>
+    <label for="masik">Egyik szám: </label>
+    <input type = "text" name="egyik" id="egyik"><br>
+    <label for="masik">Masik szám: </label>
+    <input type = "text" name="masik" id="masik"><br>
+    <input type="button" value="Osszead" onclick="osszead()"><br>
+    <div id="eredmeny">
+
+    </div>
+
+</body>
+<script>
+    document.write("<h1>Hello World!</h1>");
+    function osszead() {
+        let egyik = document.getElementById("egyik");
+        let masik = document.getElementById("masik");
+        let eredmeny = document.getElementById("eredmeny");
+        let egyikSzam = parseInt(egyik.value);
+        let masikSzam = parseInt(masik.value);
+        let osszeg = egyikSzam + masikSzam;
+        eredmeny.innerHTML = "Az osszeg: " + osszeg;
+
+
+    }
+    
+
+</script>
+
+</html>
